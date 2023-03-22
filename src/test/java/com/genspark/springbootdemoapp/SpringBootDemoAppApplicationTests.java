@@ -22,7 +22,7 @@ class SpringBootDemoAppApplicationTests {
 	@Test
 	public void shouldPassIfStringMatches() throws Exception {
 		assert(restTemplate.getForObject("http://localhost:" + port + "/home",
-				String.class)).contains("<html1><body><h1>Welcome to course application");
+				String.class)).contains("<html><body><h1>Welcome to course application");
 	}
 
 }
