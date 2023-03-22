@@ -18,7 +18,7 @@ public class MyController {
     public String home(@RequestParam(value= "name", defaultValue = "Hello world")
                            String name, @RequestParam(value= "msg",
                            defaultValue = "good morning") String msg){
-            return "<html><body><h1>Welcome to course application" +
+            return "<html><body><h1>Welcome to course application " + name +
                     "</body></html";
     }
 
